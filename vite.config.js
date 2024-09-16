@@ -12,6 +12,6 @@ export default defineConfig({
         }),
     ],
     build: {
-        outDir: 'public/build/assets/assets', // Pastikan output path sesuai
+        outDir: 'public/build', // Pastikan output path sesuai
     },
 });
