@@ -5,6 +5,8 @@ namespace App\Providers;
 // use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
+use Illuminate\Support\Facades\URL;
+
 class AuthServiceProvider extends ServiceProvider
 {
     /**
@@ -25,6 +27,11 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        if (env('APP_ENV') == 'production') {
+            // Memaksa penggunaan HTTPS pada semua URL
+            URL::forceScheme('https');
+        }
+
+        
     }
 }
