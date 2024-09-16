@@ -11,11 +11,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    server: {
-        https: true, // Jika Anda juga ingin menjalankan server pengembangan di HTTPS
-    },
     build: {
-        // Pastikan Vite menghasilkan URL yang benar di mode production
-        assetsInlineLimit: 0,
+        outDir: 'public/build', // Pastikan output path sesuai
     },
 });
