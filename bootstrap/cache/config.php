@@ -195,7 +195,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'D:\\CODEPOLITAN\\coba2\\storage\\framework/cache/data',
+        'path' => 'D:\\CODEPOLITAN\\larashop\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -278,7 +278,7 @@
       array (
         'driver' => 'sqlite',
         'url' => 'postgresql://postgres.htqzjmqyzcbviyktbobb:ZIcnOYm2TankN5Wm@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres',
-        'database' => 'D:\\CODEPOLITAN\\coba2\\database\\database.sqlite',
+        'database' => 'D:\\CODEPOLITAN\\larashop\\database\\database.sqlite',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -368,13 +368,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'D:\\CODEPOLITAN\\coba2\\storage\\app',
+        'root' => 'D:\\CODEPOLITAN\\larashop\\storage\\app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'D:\\CODEPOLITAN\\coba2\\storage\\app/public',
+        'root' => 'D:\\CODEPOLITAN\\larashop\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -394,7 +394,7 @@
     ),
     'links' => 
     array (
-      'D:\\CODEPOLITAN\\coba2\\public\\storage' => 'D:\\CODEPOLITAN\\coba2\\storage\\app/public',
+      'D:\\CODEPOLITAN\\larashop\\public\\storage' => 'D:\\CODEPOLITAN\\larashop\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -433,13 +433,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'D:\\CODEPOLITAN\\coba2\\storage\\logs/laravel.log',
+        'path' => 'D:\\CODEPOLITAN\\larashop\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'D:\\CODEPOLITAN\\coba2\\storage\\logs/laravel.log',
+        'path' => 'D:\\CODEPOLITAN\\larashop\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -491,7 +491,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'D:\\CODEPOLITAN\\coba2\\storage\\logs/laravel.log',
+        'path' => 'D:\\CODEPOLITAN\\larashop\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -557,7 +557,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'D:\\CODEPOLITAN\\coba2\\resources\\views/vendor/mail',
+        0 => 'D:\\CODEPOLITAN\\larashop\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -664,7 +664,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'D:\\CODEPOLITAN\\coba2\\storage\\framework/sessions',
+    'files' => 'D:\\CODEPOLITAN\\larashop\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -684,14 +684,14 @@
   array (
     'paths' => 
     array (
-      0 => 'D:\\CODEPOLITAN\\coba2\\resources\\views',
+      0 => 'D:\\CODEPOLITAN\\larashop\\resources\\views',
     ),
-    'compiled' => 'D:\\CODEPOLITAN\\coba2\\storage\\framework\\views',
+    'compiled' => 'D:\\CODEPOLITAN\\larashop\\storage\\framework\\views',
   ),
   'livewire' => 
   array (
     'class_namespace' => 'App\\Http\\Livewire',
-    'view_path' => 'D:\\CODEPOLITAN\\coba2\\resources\\views/livewire',
+    'view_path' => 'D:\\CODEPOLITAN\\larashop\\resources\\views/livewire',
     'layout' => 'layouts.app',
     'asset_url' => NULL,
     'app_url' => NULL,
@@ -800,7 +800,7 @@
     array (
     ),
     'enable_runnable_solutions' => NULL,
-    'remote_sites_path' => 'D:\\CODEPOLITAN\\coba2',
+    'remote_sites_path' => 'D:\\CODEPOLITAN\\larashop',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',
