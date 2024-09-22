@@ -13,8 +13,15 @@ class Index extends Component
     public $paginate = 10;
     public $search;
 
+    public $formVisible;
+
     protected $updatesQuaryString = [
         ['search' => ['except' => '']]
+    ];
+
+    protected $listeners = [
+        'formClose' => 'formCloseHandler',
+        'productStored' => 'productStoredHandler',
     ];
 
     public function mount()
@@ -31,5 +38,15 @@ class Index extends Component
             ->paginate($this->paginate)
 
         ]);
+    }
+
+    public function formCloseHandler()
+    {
+        $this->formVisible = false;
+    }
+
+    public function productStoredHandler()
+    {
+        $this->formVisible = false;
     }
 }
