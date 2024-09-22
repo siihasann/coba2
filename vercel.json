@@ -37,7 +37,7 @@
         "SESSION_DRIVER": "cookie",
 
         "DB_CONNECTION": "pgsql",
-        "DATABASE_URL" : "postgresql://postgres.htqzjmqyzcbviyktbobb:ZIcnOYm2TankN5Wm@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
+        "DATABASE_URL" : "postgresql://postgres.nxualfcbfpboaeoksbdg:ZxavIW30G6YgwP0c@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
 
     }
 }
