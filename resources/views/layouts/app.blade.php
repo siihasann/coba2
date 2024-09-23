@@ -13,32 +13,6 @@
 
         <!-- Scripts -->
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const form = document.getElementById('productForm');
-                const loadingOverlay = document.getElementById('loading-overlay');
-
-                // Livewire hook for loading state
-                Livewire.on('submit', () => {
-                    // Show the loading overlay with GSAP animation
-                    gsap.to(loadingOverlay, { opacity: 1, display: 'flex', duration: 0.5 });
-                });
-
-                form.addEventListener('submit', function () {
-                    // Show the loading overlay with GSAP animation
-                    gsap.to(loadingOverlay, { opacity: 1, display: 'flex', duration: 0.5 });
-                });
-
-                Livewire.hook('message.processed', (message, component) => {
-                    if (message.updateQueue[0].payload.event === 'store') {
-                        // Hide the loading overlay after form submission
-                        gsap.to(loadingOverlay, { opacity: 0, display: 'none', duration: 0.5 });
-                    }
-                });
-            });
-
-        </script>
-
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         @livewireStyles

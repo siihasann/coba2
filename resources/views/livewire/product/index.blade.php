@@ -23,7 +23,19 @@
                     </button>
                 </div>
 
-                <div class="p-6">
+                @if (session()->has('message'))
+                    <!-- <div>{{ session('message') }}</div> Cek view message -->
+                    <div class="flex items-center justify-between bg-green-500 text-white p-4 rounded-md mb-4" role="alert">
+                        <span>{{ session('message') }}</span>
+                        <button type="button" class="ml-4 focus:outline-none" onclick="this.parentElement.style.display='none'">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                @endif
+
+
                     <!-- Search and Pagination -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div>
