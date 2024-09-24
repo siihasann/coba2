@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Product\Index as ProductIndex;
+use App\Http\Livewire\Shop\Index as ShopIndex;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,5 +33,8 @@ Route::middleware('auth')->group(function () {
 Route::get('/admin/product', ProductIndex::class)
     ->name('admin.product')
     ->middleware('auth');
+
+Route::get('/shop', ShopIndex::class)
+    ->name('shop.index');
 
 require __DIR__.'/auth.php';

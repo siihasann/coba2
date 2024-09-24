@@ -16,6 +16,12 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('shop.index')" :active="request()->routeIs('shop.index')">
+                        {{ __('Shops') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -40,6 +46,10 @@
 
                         <x-dropdown-link :href="route('admin.product')">
                             {{ __('Products') }}
+                        </x-dropdown-link>
+
+                        <x-dropdown-link :href="route('shop.index')">
+                            {{ __('Shops') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->
