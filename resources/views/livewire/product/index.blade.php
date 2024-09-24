@@ -8,7 +8,11 @@
                 </div>
     <!-- Form -->
     @if ($formVisible)
-        @livewire('product.create')
+        @if (! $formUpdate)
+            @livewire('product.create')
+        @else
+            @livewire('product.update')
+        @endif
     @endif
 
     <!-- Product List -->
@@ -78,7 +82,7 @@
                                             class="px-2 py-1 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold rounded-lg focus:outline-none mr-2">
                                             Edit
                                         </button>
-                                        <button wire:loading.attr="disabled" wire:click="deleteProduct({{ $product->id }})"
+                                        <button  wire:loading.attr="disabled" wire:click="deleteProduct({{ $product->id }})"
                                             class="px-2 py-1 bg-red-500 hover:bg-red-600 text-white text-sm font-semibold rounded-lg focus:outline-none">
                                             Delete
                                         </button>
