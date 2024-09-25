@@ -13,15 +13,7 @@
                     placeholder="Search products..." 
                     class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500">
             </div>
-            <!-- Cart Icon -->
-            <div class="flex items-center space-x-4">
-                <a href="#" class="text-gray-700 hover:text-gray-900">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18l-2 13H5L3 3z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21a2 2 0 100-4 2 2 0 000 4zM8 21a2 2 0 100-4 2 2 0 000 4z"/>
-                    </svg>
-                </a>
-            </div>
+         @livewire('shop.cartmenu')
         </div>
     </div>
 
@@ -49,7 +41,7 @@
                     <p class="mt-2 text-sm text-gray-600">{{ $product->desc }}</p>
                     <div class="flex justify-between items-center mt-4">
                         <span class="text-lg font-bold text-indigo-600">Rp{{ number_format($product->price, 2, ',', '.') }}</span>
-                        <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Add to Cart</a>
+                        <button wire:click="addToCart({{$product -> id}})" type="button" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Add to Cart</button>
                     </div>
                 </div>
             </div>
