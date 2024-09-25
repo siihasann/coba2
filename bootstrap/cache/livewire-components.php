@@ -3,5 +3,7 @@
   'product.create' => 'App\\Http\\Livewire\\Product\\Create',
   'product.index' => 'App\\Http\\Livewire\\Product\\Index',
   'product.update' => 'App\\Http\\Livewire\\Product\\Update',
+  'shop.cart' => 'App\\Http\\Livewire\\Shop\\Cart',
+  'shop.cartmenu' => 'App\\Http\\Livewire\\Shop\\Cartmenu',
   'shop.index' => 'App\\Http\\Livewire\\Shop\\Index',
 );
