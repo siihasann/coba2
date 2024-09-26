@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Product\Index as ProductIndex;
 use App\Http\Livewire\Shop\Index as ShopIndex;
+use App\Http\Livewire\Shop\Cart as CartIndex;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,5 +37,8 @@ Route::get('/admin/product', ProductIndex::class)
 
 Route::get('/shop', ShopIndex::class)
     ->name('shop.index');
+
+Route::get('/cart', CartIndex::class)
+    ->name('cart.index');
 
 require __DIR__.'/auth.php';
