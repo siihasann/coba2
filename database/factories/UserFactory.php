@@ -23,6 +23,8 @@ class UserFactory extends Factory
         return [
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
+            'phone' => '08584232322',
+            'address' => 'Jawa Tengah, Indonesia',
             'email_verified_at' => now(),
             'password' => Hash::make('password'), // password
             'remember_token' => Str::random(10),
