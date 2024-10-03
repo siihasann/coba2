@@ -11,7 +11,8 @@ class Cartmenu extends Component
     
     protected $listeners = [
         'addToCart' => 'updateCartTotal',
-        'removeFromCart' => 'updateCartTotal'
+        'removeFromCart' => 'updateCartTotal',
+        'cartClear' => 'updateCartTotal'
     ];
     
 
