@@ -67,7 +67,7 @@
       <!-- Total and Checkout Button -->
       <div class="flex flex-col md:flex-row justify-between items-center mt-6 border-t pt-4">
         <span class="text-lg md:text-xl font-semibold">0</span>
-        <a href="#" class="bg-indigo-600 text-white px-4 py-2 mt-4 md:mt-0 rounded-lg hover:bg-indigo-700">Proceed to Checkout</a>
+        <a href="{{route('checkout.index')}}" class="bg-indigo-600 text-white px-4 py-2 mt-4 md:mt-0 rounded-lg hover:bg-indigo-700">Proceed to Checkout</a>
       </div>
 
       

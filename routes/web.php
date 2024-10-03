@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Product\Index as ProductIndex;
 use App\Http\Livewire\Shop\Index as ShopIndex;
 use App\Http\Livewire\Shop\Cart as CartIndex;
+use App\Http\Livewire\Shop\Checkout as CheckoutIndex;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,5 +41,8 @@ Route::get('/shop', ShopIndex::class)
 
 Route::get('/cart', CartIndex::class)
     ->name('cart.index');
+
+Route::get('/chekout', CheckoutIndex::class)
+    ->name('checkout.index');
 
 require __DIR__.'/auth.php';
