@@ -1,13 +1,6 @@
 <div class="flex min-h-screen">
     <div class="flex-1 p-6 bg-gray-100">
     <div class="max-w-7xl mx-auto p-4">
-        <!-- Loading Spinner -->
-        <div id="loading-overlay" class="absolute inset-0 bg-white bg-opacity-75 flex items-center justify-center z-50 hidden">
-                        <svg class="animate-spin h-10 w-10 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0116 0h2a10 10 0 10-10 10v-2a8 8 0 01-8-8z"></path>
-                        </svg>
-                    </div>
         <!-- Form -->
         @if ($formVisible)
             @if (! $formUpdate)

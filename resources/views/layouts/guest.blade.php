@@ -6,7 +6,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-        @livewireScripts
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
+        
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -16,7 +18,6 @@
         <script src="https://kit.fontawesome.com/b30d6eb604.js" crossorigin="anonymous"></script>
         
 
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
     </head>
     <body class="font-sans text-gray-900 antialiased">
@@ -31,6 +32,7 @@
                 {{ $slot }}
             </div>
         </div>
+        @livewireScripts
         <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{config('services.midtrans.clientKey')}}"></script>
         
     </body>

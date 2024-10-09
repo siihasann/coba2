@@ -8,6 +8,8 @@ use App\Http\Livewire\Shop\Checkout as CheckoutIndex;
 use App\Http\Livewire\Admin\Dashboard as AdminDashboard;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin\User as AdminUser;
+use App\Http\Livewire\PublicShopIndex ;
+
 // use App\Http\Controllers\HomeController;
 
 /*
@@ -24,6 +26,9 @@ use App\Http\Livewire\Admin\User as AdminUser;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/shop', PublicShopIndex::class)
+        ->name('public.shop');
 
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin/dashboard', AdminDashboard::class)
@@ -47,7 +52,7 @@ Route::middleware('auth')->group(function () {
         ->name('admin.product')
         ->middleware('admin'); // Menggunakan middleware 'admin' yang sudah ada
 
-    Route::get('/shop', ShopIndex::class)
+    Route::get('/shop/auth', ShopIndex::class)
         ->name('shop.index');
     
     Route::get('/cart', CartIndex::class)

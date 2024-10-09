@@ -16,6 +16,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@hotwired/turbo": "^8.0.10",
         "@supabase/supabase-js": "^2.45.4",
         "gsap": "^3.12.5",
         "turbolinks": "^5.2.0",
